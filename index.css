@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+
+button{
+    font-size: 1.5em;
+    font-size: bold;
+    padding: 10px 30px ;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(126, 37, 59);
+
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+.color-acento{color: blueviolet;}
+
+header{
+    background-color: rgb(245, 245, 245);
+
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+header .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/pexels-josh-sorenson-1714208.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+#somos-aprende-conmigo{
+
+}
+
+#hero button{
+    font: size 1.75em; ;
+}
+
+#somos-aprende-conmigo .container{
+    text-align: center;
+    padding: 200px 12px ;
+
+}
+
+#Nuestros-Programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+#Nuestros-Programas .container{
+padding: 150px 12px;
+
+}
+
+#Nuestros-Programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+
+
+}
+#Nuestros-Programas p{
+    display: none;
+
+}
+#Nuestros-Programas .carta{
+    background-image: center center ;
+    background-size: cover ;
+    padding: 60px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:first-child{
+background-image:  linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+, url("media/pexels-fauxels-3182773.jpg");
+
+
+}
+.carta:nth-child(2){
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("media/pexels-nemuel-sereti-6424589.jpg");
+   
+
+}
+.carta:nth-child(3){
+    background-image:  linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+, url("media/pexels-jan-kopřiva-3280908.jpg");
+
+}
+
+#caracteristicas .container{
+      text-align: center;
+      padding: 250px  12px;
+
+}
+
+#caracteristicas h2{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 12px  12px;
+    font-size: 3.5em;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: 3em;
+}
+
+#final{
+    background-image:  linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("media/pexels-mikhail-fesenko-9553909.jpg");
+
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+     color: white;
+    height: 50vh;
+
+
+}
+
+#final button{
+    font-size: 2em;
+}
+#final h2{
+    font-size: 4em;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+ height: 150px;
+ display: flex;
+ justify-content:center ;
+ align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction:  row;
+        justify-content: space-between;
+
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+    #somos-aprende-conmigo .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    
+   #somos-aprende-conmigo .img-container{
+    background-image: url(media/pexels-fauxels-3182773.jpg);
+      background-size: cover;
+      background-position: center center ;
+      height: 500px;
+      width: 400%;
+   }
+
+}
+
+#Nuestros-Programas .programas{
+    display: flex ;
+    justify-content: center;
+
+}
+#Nuestros-Progrmas p{
+    display: block;
+    margin-bottom: 30px;
+
+}
+
+#Nuestros-Progrmas h3{
+    margin: 0%;
+}
+
+#Nuestros-Progrmas .carta{
+    padding: 15px;
+}
+
+#caracteristicas{
+ background-image:linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+),
+ url("media/pexels-nemuel-sereti-6424589.jpg");
+ background-repeat: no-repeat;
+ background-size: 1500px  1500px ;
+ 
+ 
+ 
+}
+
+#caracteristicas .container{
+    text-align: initial;
+
+}
+
+#caracteristicas ul{
+    margin: 100px;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    background-position: center center ;
+}
+
+#final button{
+    font-size: 2em;
+}
+footer .container{
+justify-content: flex-end;
+}
